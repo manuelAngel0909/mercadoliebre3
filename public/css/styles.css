@@ -1,0 +1,281 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #ebebeb;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 12px;
+}
+
+div.top-header {
+  display: flex;
+  padding: 5%;
+  align-items: center;
+}
+
+header {
+  background-color: #eac926;
+}
+
+
+header div.logo {
+  width: 50%;
+  padding: 10px;
+  margin-right: 100px;
+}
+
+header nav {
+  display: flex;
+  font-size: 12px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  justify-content: space-between;
+}
+header ul {
+  display: flex;
+  justify-content: space-between;
+}
+header ul li {
+  list-style-type: none;
+  padding: 15px;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+header .form .input {
+  background-color: #fff;
+  border: 1px solid #000;
+  outline: none;
+  color: #666;
+  padding: 2px;
+}
+header .form .submit {
+  background-color: #fff;
+  border: 1px solid #000;
+  color: #666;
+  width: 10%;
+}
+
+header div.top-header p {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+div.burger-menu {
+  text-align: center;
+}
+
+div.burger-menu i {
+  background-color: #0044aa;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 20px;
+  height: 40px;
+  margin: 10px 0px 20px 0px;
+  padding: 10px;
+  width: 40px;
+}
+
+
+.form{
+  display: flex;
+  width: 50%;
+  justify-content: flex-end;
+}
+.c-ultima-v{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.c-ofertas{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+article div.main-article {
+  width: 100%;
+  margin-bottom: 10px;
+  border-top: solid 1px #ebebeb;
+  padding: 15px;
+}
+
+.price {
+  font-size: 18px;
+  width: 30%;
+}
+.discount{
+  width: 30%;
+}
+
+.discount,
+.description {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+h3,
+.description {
+  color: #666;
+  display: none;
+}
+
+section.banner img {
+  width: 100%;
+}
+
+main {
+  width: 90%;
+  margin: 20px;
+  margin: auto
+}
+
+main section article {
+  background-color: #fff;
+  padding: 15px;
+  margin: 10px;
+}
+
+main section article img {
+  width: 100%;
+}
+
+main section article i,
+.discount {
+  color: #39b54a;
+}
+main section article i{
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #39b54a;
+  background-color: #FFF;
+ position: absolute;
+ right: 20px;
+ top: -15px;
+}
+
+.main-article{
+  border-top: 1px solid #ebebeb;
+  display: flex;
+  padding: 15px;
+  flex-wrap: wrap;
+  align-items: baseline;
+  position: relative;
+
+}
+nav{
+  display: none;
+}
+
+.cont-f{
+  background-attachment: #ebebeb;
+}
+.primeraseccion{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.i{
+  width: 90%;
+  margin: 20px;
+  
+  color: blue;
+}
+.primeraseccion .i input{
+  width: 100%;
+  height: 4vh;
+  border-radius: 10px;
+  padding: 10px;
+}
+.cumple{
+  display: flex;
+  flex-direction: column;
+  width: 75vw;
+  padding: 10px;
+  font-size: 20px;
+  margin-left: 40px;
+  text-align: center;
+}
+.cumple input{
+  border-radius: 10px;
+  text-align: center;
+  height: 4vh;
+  margin-top: 10px;
+}
+h4{
+  text-align: center;
+  font-size: 20px;
+  margin: 10px 0;
+}
+.perfil{
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+.intereses div{
+  margin: 15px 0;
+  padding: 15px;
+}
+.foto-contraseña input{
+  border-radius: 10px;
+  text-align: center;
+  height: 4vh;
+  margin-top: 10px;
+}
+
+.d-login input{
+  border-radius: 10px;
+  text-align: center;
+  height: 4vh;
+  margin-top: 10px;
+}
+
+@media(min-width:360px){
+.description{
+    display: block;
+  }
+nav{
+  display: block;
+}
+.burger-menu{
+    display: none;
+  }
+.products{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.products article {
+  width: 45%;
+}
+
+
+
+
+}
+@media(min-width:768px){
+  article {box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+.products article {
+  width: 22%;
+}
+} 

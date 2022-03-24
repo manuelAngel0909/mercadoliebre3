@@ -21,6 +21,7 @@ div.top-header {
   display: flex;
   padding: 5%;
   align-items: center;
+  justify-content: space-around;
 }
 
 header {
@@ -32,6 +33,8 @@ header div.logo {
   width: 50%;
   padding: 10px;
   margin-right: 100px;
+  flex-grow: 0.75;
+  min-width: 35%;
 }
 
 header nav {
@@ -40,6 +43,7 @@ header nav {
   margin-left: 20px;
   margin-bottom: 10px;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 header ul {
   display: flex;
@@ -61,6 +65,8 @@ header .form .input {
   outline: none;
   color: #666;
   padding: 2px;
+  font-size: 10px;
+  height: 25px;
 }
 header .form .submit {
   background-color: #fff;
@@ -110,13 +116,15 @@ div.burger-menu i {
 article div.main-article {
   width: 100%;
   margin-bottom: 10px;
-  border-top: solid 1px #ebebeb;
+  border-top: solid 1px red;
   padding: 15px;
 }
+
 
 .price {
   font-size: 18px;
   width: 30%;
+  margin-right: 40px;
 }
 .discount{
   width: 30%;
@@ -178,6 +186,7 @@ main section article i{
   flex-wrap: wrap;
   align-items: baseline;
   position: relative;
+  justify-content: space-around;
 
 }
 nav{
@@ -219,6 +228,7 @@ nav{
   text-align: center;
   height: 4vh;
   margin-top: 10px;
+  width: 110%;
 }
 h4{
   text-align: center;
@@ -234,11 +244,19 @@ h4{
   margin: 15px 0;
   padding: 15px;
 }
+.foto-contraseña{
+  text-align: center;
+}
+.foto-contraseña input[type="file"]{
+  width: 100%;
+}
+
 .foto-contraseña input{
   border-radius: 10px;
   text-align: center;
   height: 4vh;
   margin-top: 10px;
+  width: 22%;
 }
 
 .d-login input{
@@ -246,8 +264,72 @@ h4{
   text-align: center;
   height: 4vh;
   margin-top: 10px;
+  
+}
+main section article:hover {
+  box-shadow: 0px 0px 10px rgb(100,100,100);
+  }
+  main section article .description{
+    display: none;
+  }
+  main section article:hover .description{
+   color: #666;
+   display: block;
+  }
+  main section article{
+    transition: transform 1s ease;
+  }
+  main section article:hover i{
+    display: block;
+    transform: rotate(-90deg);
+    
+  }
+  .boton-enviar{
+    width: 35%;
+    max-width: 20vw;
+  }
+  .boton-enviar:hover{
+    background-color: #0022aa;
+    color: white;
+  }
+  .boton-borrar{
+    width: 35%;
+    max-width: 20vw;
+  }
+  label:hover{
+    background-color: #0022aa;
+    font-size: 14px;
+    color: white;
+  }
+ .l-enviar{
+    visibility: hidden;    
+  }
+.d-login:hover .l-enviar{
+  visibility: visible;
 }
 
+  .cont-foot{
+display: flex;
+justify-content: space-around;
+margin-top: 50px;
+}
+footer i{
+  background-color: #0022aa;
+color: #fff;
+font-size: 20px;
+border: 1px solid #0022aa;
+margin-right: 10px;
+}
+footer i:hover{
+  background-color:#fff;
+  color: #0044aa;
+}
+footer p{
+  font-size: 18px;
+}
+.foot-item{
+  text-align: center;
+}  
 @media(min-width:360px){
 .description{
     display: block;
@@ -273,8 +355,8 @@ nav{
 
 }
 @media(min-width:768px){
-  article {box-shadow: 0px 0px 10px rgb(100, 100, 100);
-  }
+  /* article {box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  } */
 .products article {
   width: 22%;
 }

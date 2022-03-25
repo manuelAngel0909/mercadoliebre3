@@ -12,4 +12,4 @@ app.get("/register", function (req,res){
 app.get("/login", function (req,res){
   res.sendFile(__dirname + "/views/login.html")
 });
-app.listen(5035, () => console.log("running on port 5035"));
+app.listen(port, () => console.log("running on port 5035"));
